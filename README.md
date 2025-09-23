@@ -16,10 +16,11 @@ For the first step I like to remove any duplicates the data might have, since du
 This way, true duplicates will receive multiple row numbers within the same partition, and I can keep only the first occurrence while removing the rest.
 ![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%202025-09-22%20234648.jpg?raw=true) 
 Because we cannot update a CTE, there is another option to creating another table that has an extra row, and deleting the row that is greater than 1. ![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%20(5).png?raw=true) Finally I wrote a simple line of code to delete the duplicates:
+```sql
 DELETE
 FROM layoffs2
 WHERE unique_row_number>1;
-
+```
 ## Standerdizing Data 
 
 Standerdizing data refers to the process of ensuring that data within a database is consistent in its format, meaning, and structure. 
