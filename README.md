@@ -14,4 +14,4 @@ First and foremost before making any changes to the original dataset, we must ma
 For the first step I like to remove any duplicates the data might have, since duplicates can skew analysis. In this dataset, because I don't have a unique row ID (which makes it alot easier to check for duplicates) I can create a new column called row_number to check for any duplicates. This column is going to have a window function (ROW_NUMBER()) that assigns a unique integer to each row, partitioned by all column names.
 
 This way, true duplicates will receive multiple row numbers within the same partition, and I can keep only the first occurrence while removing the rest.
-![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%202025-09-22%20234648.jpg?raw=true)
+![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%202025-09-22%20234648.jpg?raw=true) ![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%202025-09-23%20002155.png?raw=true)
