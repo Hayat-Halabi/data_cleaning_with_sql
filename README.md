@@ -16,3 +16,8 @@ For the first step I like to remove any duplicates the data might have, since du
 This way, true duplicates will receive multiple row numbers within the same partition, and I can keep only the first occurrence while removing the rest.
 ![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%202025-09-22%20234648.jpg?raw=true) 
 Because we cannot update a CTE, there is another option to creating another table that has an extra row, and deleting the row that is greater than 1. ![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%20(5).png?raw=true) 
+
+## Standerdizing Data 
+
+Standerdizing data refers to the process of ensuring that data within a database is consistent in its format, meaning, and structure. 
+I’ll start by trimming columns and updating values to keep them neat and uniform. Next, I’ll check for duplicates or misspellings and make adjustments. For example, in the 'industry' column, 'crypto' appeared in three variations, so I standardized it to one value. As you see below I highlighed the changes in the action output affected. ![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%202025-09-23%20011437.png?raw=true)
