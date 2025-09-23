@@ -7,4 +7,4 @@ Attached below I have a raw dataset of global layoffs. As you can see within thi
 
 Step one before making any changes to the original dataset, we must make a duplicate of the table and fill the values just in case any mistakes were to happen, its best practice to do so. I also went ahead and altered the original dataname to layoffs_raw just so its clear. As you can see below the new table is made and filled with values, now we can move on to the next steps. 
 
-![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%20(3).png?raw=true)
+![image alt](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%20(4).png?raw=true)
