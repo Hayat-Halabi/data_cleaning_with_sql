@@ -42,7 +42,8 @@ MODIFY COLUMN `date` DATE;
 
 It’s safe to say that almost every dataset will contain some NULL values. The best way to handle them is to first understand why they are NULL. In some cases, NULLs are valid because the data doesn’t apply. In other cases, they should be replaced with a default value, such as 0 or 'unknown'. Sometimes, NULLs appear due to issues in the data pipeline, and in those situations they can often be corrected by retrieving the proper values from the source.
 
-Previosly while working with the Industry column there was a couple of blank and null values. I checked the companies of these blank values and was able to populate and update the NULL rows in the industry column. I joined the table on itself on the industry column where the company name is the same. I then populated the null values to equal the industry name using this code :
+Previously, while working with the Industry column, there were a few blank and NULL values. I checked the companies associated with these blank values and was able to populate and update the NULL rows in the Industry column. I joined the table to itself on the company column to find matching entries where the industry information was available. I then populated the NULL values with the corresponding industry names using the following queries:
+
 ```sql
 SELECT *
 FROM layoffs2 t1
