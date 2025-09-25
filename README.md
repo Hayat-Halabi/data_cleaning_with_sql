@@ -32,6 +32,9 @@ SELECT `date`,
 STR_TO_DATE ( `date` , '%m/%d/%Y') 
 FROM layoffs2;
 
-UPDATE layoffs 
+UPDATE layoffs2
 SET `date` = STR_TO_DATE ( `date` , '%m/%d/%Y')
+
+ALTER TABLE layoffs2
+MODIFY COLUMN `date` DATE;
 ```
