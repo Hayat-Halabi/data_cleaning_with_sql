@@ -64,3 +64,5 @@ WHERE( t1.industry is NULL OR t1.industry = '')
 AND t2.industry IS NOT NULL;
 
 ```
+Moving onto the total_laid_off and percentage_layoffs columns, I noticed that some rows have NULL values in both fields. Since these rows don’t provide any meaningful information, I decided to remove them from the dataset to ensure accurate calculations of totals and percentages.
+Finally I decided to drop any unnecessary columns that add no value to the table, in the begining of this project I created a unique row number to check for any duplicates, now I no longer need that column so I'm going to drop it. ![image](https://github.com/Hayat-Halabi/data_cleaning_with_sql/blob/main/Screenshot%20(7).png?raw=true)
